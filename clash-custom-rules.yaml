@@ -1,0 +1,587 @@
+# 1. rule-providers：外部规则集的定义和更新设置
+rule-providers:
+  Apple:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml'
+    interval: 86400
+    behavior: classical
+  Telegram:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml'
+    interval: 86400
+    behavior: classical
+  YouTube:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml'
+    interval: 86400
+    behavior: classical
+  BiliBili:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml'
+    interval: 86400
+    behavior: classical
+  TikTok:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml'
+    interval: 86400
+    behavior: classical
+  Spotify:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml'
+    interval: 86400
+    behavior: classical
+  Netflix:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml'
+    interval: 86400
+    behavior: classical
+  Disney:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml'
+    interval: 86400
+    behavior: classical
+  Google:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml'
+    interval: 86400
+    behavior: classical
+  OpenAI:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml'
+    interval: 86400
+    behavior: classical
+  Microsoft:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml'
+    interval: 86400
+    behavior: classical
+  LinkedIn:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/LinkedIn/LinkedIn.yaml'
+    interval: 86400
+    behavior: classical
+  Twitter:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml'
+    interval: 86400
+    behavior: classical
+  GameDownload:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownload/GameDownload.yaml'
+    interval: 86400
+    behavior: classical
+  GameDownloadCN:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.yaml'
+    interval: 86400
+    behavior: classical
+  Steam:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml'
+    interval: 86400
+    behavior: classical
+  SteamCN:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.yaml'
+    interval: 86400
+    behavior: classical
+  OneDrive:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.yaml'
+    interval: 86400
+    behavior: classical
+  Emby:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Emby/Emby.yaml'
+    interval: 86400
+    behavior: classical
+  HoYoverse:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HoYoverse/HoYoverse.yaml'
+    interval: 86400
+    behavior: classical
+  GlobalMedia:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml'
+    interval: 86400
+    behavior: classical
+  ChinaMax:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical.yaml'
+    interval: 86400
+    behavior: classical
+  Gemini:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml'
+    interval: 86400
+    behavior: classical
+  Claude:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml'
+    interval: 86400
+    behavior: classical
+  Hijacking:
+    type: http
+    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Hijacking/Hijacking.yaml'
+    interval: 86400
+    behavior: classical
+  China:
+    type: http
+    url: 'https://raw.githubusercontent.com/shaoQ-1/openclash/refs/heads/main/direct2.yaml'
+    interval: 86400
+    behavior: classical
+  Final:
+    type: http
+    url: 'https://raw.githubusercontent.com/shaoQ-1/openclash/refs/heads/main/final.yaml'
+    interval: 86400
+    behavior: classical
+
+# 2. proxy-groups：策略组和节点组（已将您的 custom_proxy_group 格式转换）
+proxy-groups:
+  - name: 🍎 Apple
+    type: select
+    proxies:
+      - DIRECT
+      - 所有-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 东南亚-自动
+      - 欧洲-自动
+      - 加拿大-自动
+      - 澳大利亚-自动
+      - 俄罗斯-自动
+      - 阿根廷-自动
+      - 土耳其-自动
+      - 印度-自动
+      - 其他-自动
+      - REJECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - DIRECT
+      - 所有-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 东南亚-自动
+      - 欧洲-自动
+      - 加拿大-自动
+      - 澳大利亚-自动
+      - 俄罗斯-自动
+      - 阿根廷-自动
+      - 土耳其-自动
+      - 印度-自动
+      - 其他-自动
+      - REJECT
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+  - name: ✈️ Telegram
+    type: select
+    proxies:
+      - 所有-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 东南亚-自动
+      - 欧洲-自动
+      - 加拿大-自动
+      - 澳大利亚-自动
+      - 俄罗斯-自动
+      - 阿根廷-自动
+      - 土耳其-自动
+      - 印度-自动
+      - 其他-自动
+      - REJECT
+  - name: 📺 YouTube
+    type: select
+    proxies:
+      - 所有-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 东南亚-自动
+      - 欧洲-自动
+      - 加拿大-自动
+      - 澳大利亚-自动
+      - 俄罗斯-自动
+      - 阿根廷-自动
+      - 土耳其-自动
+      - 印度-自动
+      - 其他-自动
+      - REJECT
+  - name: 🤖 OpenAI
+    type: select
+    proxies:
+      - 所有-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 东南亚-自动
+      - 欧洲-自动
+      - 加拿大-自动
+      - 澳大利亚-自动
+      - 俄罗斯-自动
+      - 阿根廷-自动
+      - 土耳其-自动
+      - 印度-自动
+      - 其他-自动
+      - REJECT
+  - name: 🤖 Gemini
+    type: select
+    proxies:
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 东南亚-自动
+      - 欧洲-自动
+      - 加拿大-自动
+      - 澳大利亚-自动
+      - 俄罗斯-自动
+      - 阿根廷-自动
+      - 土耳其-自动
+      - 印度-自动
+      - 其他-自动
+      - REJECT
+  - name: 🤖 Claude
+    type: select
+    proxies:
+      - 所有-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 东南亚-自动
+      - 欧洲-自动
+      - 加拿大-自动
+      - 澳大利亚-自动
+      - 俄罗斯-自动
+      - 阿根廷-自动
+      - 土耳其-自动
+      - 印度-自动
+      - 其他-自动
+      - REJECT
+  - name: 🎵 Spotify
+    type: select
+    proxies:
+      - 所有-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 东南亚-自动
+      - 欧洲-自动
+      - 加拿大-自动
+      - 澳大利亚-自动
+      - 俄罗斯-自动
+      - 阿根廷-自动
+      - 土耳其-自动
+      - 印度-自动
+      - 其他-自动
+      - REJECT
+  - name: 🔎 Google
+    type: select
+    proxies:
+      - 所有-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 东南亚-自动
+      - 欧洲-自动
+      - 加拿大-自动
+      - 澳大利亚-自动
+      - 俄罗斯-自动
+      - 阿根廷-自动
+      - 土耳其-自动
+      - 印度-自动
+      - 其他-自动
+      - REJECT
+  - name: ☁️ OneDrive
+    type: select
+    proxies:
+      - DIRECT
+      - 所有-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 东南亚-自动
+      - 欧洲-自动
+      - 加拿大-自动
+      - 澳大利亚-自动
+      - 俄罗斯-自动
+      - 阿根廷-自动
+      - 土耳其-自动
+      - 印度-自动
+      - 其他-自动
+      - REJECT
+  - name: 🎞️ Microsoft
+    type: select
+    proxies:
+      - DIRECT
+      - 所有-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 东南亚-自动
+      - 欧洲-自动
+      - 加拿大-自动
+      - 澳大利亚-自动
+      - 俄罗斯-自动
+      - 阿根廷-自动
+      - 土耳其-自动
+      - 印度-自动
+      - 其他-自动
+      - REJECT
+  - name: 🐦 Twitter
+    type: select
+    proxies:
+      - 所有-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 东南亚-自动
+      - 欧洲-自动
+      - 加拿大-自动
+      - 澳大利亚-自动
+      - 俄罗斯-自动
+      - 阿根廷-自动
+      - 土耳其-自动
+      - 印度-自动
+      - 其他-自动
+      - REJECT
+  - name: 🌍 全球媒体
+    type: select
+    proxies:
+      - 所有-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 东南亚-自动
+      - 欧洲-自动
+      - 加拿大-自动
+      - 澳大利亚-自动
+      - 俄罗斯-自动
+      - 阿根廷-自动
+      - 土耳其-自动
+      - 印度-自动
+      - 其他-自动
+      - REJECT
+  - name: 🎬 Emby
+    type: select
+    proxies:
+      - DIRECT
+      - 所有-自动
+      - 香港-自动
+      - 台湾-自动
+      - 日本-自动
+      - 新加坡-自动
+      - 韩国-自动
+      - 美国-自动
+      - 东南亚-自动
+      - 欧洲-自动
+      - 加拿大-自动
+      - 澳大利亚-自动
+      - 俄罗斯-自动
+      - 阿根廷-自动
+      - 土耳其-自动
+      - 印度-自动
+      - 其他-自动
+      - REJECT
+  - name: 🚧 Hijacking
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT
+  - name: 🇨🇳 China
+    type: select
+    proxies:
+      - DIRECT
+  - name: Final
+    type: select
+    proxies:
+      - 所有-自动
+      - DIRECT
+  - name: 所有-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - all
+  - name: 香港-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 'regex (香港|澳門|HK|Hong Kong|HKG|🇭🇰)'
+  - name: 台湾-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 'regex (台湾|TW|Taiwan|TWN|🇹🇼)'
+  - name: 日本-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 'regex (日本|JP|Japan|JPN|🇯🇵)'
+  - name: 新加坡-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 'regex (新加坡|SG|Singapore|SGP|🇸🇬)'
+  - name: 韩国-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 'regex (韩国|KR|Korea|🇰🇷)'
+  - name: 美国-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 'regex (美国|US|USA|United States|🇺🇸)'
+  - name: 欧洲-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 'regex (德国|希腊|芬兰|意大利|比利时|法国|荷兰|冰岛|瑞士|瑞典|西班牙|爱尔兰|挪威|立陶宛|波兰|英国|UK|England|France|Germany)'
+  - name: 东南亚-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 'regex (越南|柬埔寨|马来西亚|泰国|印度尼西亚|印尼|老挝|菲律宾|马来西亚|Singapore|Thailand|Philippines)'
+  - name: 加拿大-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 'regex (加拿大|Canada)'
+  - name: 澳大利亚-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 'regex (澳洲|澳大利亚|Australia)'
+  - name: 俄罗斯-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 'regex (俄罗斯|俄|Russia)'
+  - name: 阿根廷-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 'regex (阿根廷|Argentina)'
+  - name: 土耳其-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 'regex (土耳其|Turkey)'
+  - name: 印度-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 'regex (印度|India)'
+  - name: 其他-自动
+    type: url-test
+    url: 'http://connectivitycheck.gstatic.com/generate_204'
+    interval: 600
+    tolerance: 50
+    proxies:
+      - 'regex (孟|班)'
+
+# 3. rules：规则列表
+rules:
+  - RULE-PROVIDER,Hijacking,Hijacking
+  - RULE-PROVIDER,Advertising,🛑 全球拦截
+  - RULE-PROVIDER,Google,🔎 Google
+  - RULE-PROVIDER,YouTube,📺 YouTube
+  - RULE-PROVIDER,Spotify,🎵 Spotify
+  - RULE-PROVIDER,Netflix,Netflix
+  - RULE-PROVIDER,Disney,Disney
+  - RULE-PROVIDER,OpenAI,🤖 OpenAI
+  - RULE-PROVIDER,Gemini,🤖 Gemini
+  - RULE-PROVIDER,Claude,🤖 Claude
+  - RULE-PROVIDER,Apple,🍎 Apple
+  - RULE-PROVIDER,Telegram,✈️ Telegram
+  - RULE-PROVIDER,Microsoft,🎞️ Microsoft
+  - RULE-PROVIDER,OneDrive,☁️ OneDrive
+  - RULE-PROVIDER,HoYoverse,HoYoverse
+  - RULE-PROVIDER,GlobalMedia,🌍 全球媒体
+  - RULE-PROVIDER,TikTok,TikTok
+  - RULE-PROVIDER,LinkedIn,LinkedIn
+  - RULE-PROVIDER,Twitter,🐦 Twitter
+  - RULE-PROVIDER,GameDownload,GameDownload
+  - RULE-PROVIDER,Steam,Steam
+  - RULE-PROVIDER,Emby,🎬 Emby
+  - RULE-PROVIDER,ChinaMax,ChinaMax
+  - RULE-PROVIDER,GameDownloadCN,GameDownloadCN
+  - RULE-PROVIDER,SteamCN,SteamCN
+  - GEOIP,CN,🇨🇳 China
+  - MATCH,Final
+
+# 注意：以下两行是您之前使用的配置文件生成工具特有的指令，如果您的工具需要，请保留，否则可以删除。
+# enable_rule_generator=true
+# overwrite_original_rules=true
