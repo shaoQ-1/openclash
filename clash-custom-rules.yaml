@@ -543,5 +543,5 @@ rules:
   - MATCH,Final
 
 # 注意：以下两行是您之前使用的配置文件生成工具特有的指令，如果您的工具需要，请保留，否则可以删除。
-# enable_rule_generator=true
-# overwrite_original_rules=true
+enable_rule_generator=true
+overwrite_original_rules=true
