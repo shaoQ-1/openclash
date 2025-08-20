@@ -35,11 +35,6 @@ rule-providers:
     url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml'
     interval: 86400
     behavior: classical
-  Disney:
-    type: http
-    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml'
-    interval: 86400
-    behavior: classical
   Google:
     type: http
     url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml'
@@ -55,36 +50,6 @@ rule-providers:
     url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml'
     interval: 86400
     behavior: classical
-  LinkedIn:
-    type: http
-    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/LinkedIn/LinkedIn.yaml'
-    interval: 86400
-    behavior: classical
-  Twitter:
-    type: http
-    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml'
-    interval: 86400
-    behavior: classical
-  GameDownload:
-    type: http
-    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownload/GameDownload.yaml'
-    interval: 86400
-    behavior: classical
-  GameDownloadCN:
-    type: http
-    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/GameDownloadCN/GameDownloadCN.yaml'
-    interval: 86400
-    behavior: classical
-  Steam:
-    type: http
-    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml'
-    interval: 86400
-    behavior: classical
-  SteamCN:
-    type: http
-    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.yaml'
-    interval: 86400
-    behavior: classical
   OneDrive:
     type: http
     url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OneDrive/OneDrive.yaml'
@@ -93,11 +58,6 @@ rule-providers:
   Emby:
     type: http
     url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Emby/Emby.yaml'
-    interval: 86400
-    behavior: classical
-  HoYoverse:
-    type: http
-    url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HoYoverse/HoYoverse.yaml'
     interval: 86400
     behavior: classical
   GlobalMedia:
